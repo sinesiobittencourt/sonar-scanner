@@ -30,5 +30,6 @@ steps:
     working_directory: "${{clone}}" # Running command where code cloned
     commands:
       - "ls"
+      - "docker ps"
     stage: "test"
 
