@@ -1,4 +1,4 @@
-[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/sinesio.com.br/Sonar%2Fsonar?type=cf-1&key=eyJhbGciOiJIUzI1NiJ9.NWYwYmFlYzg1ZDZhMTEwMWUxMTZlNmMw.QwxVWdcTTNmv-mD06sR5EMpw_weBBFE6jChlzqnRy1E)]( https://g.codefresh.io/pipelines/edit/new/builds?id=5fd2b0302de05960a1c8b8b0&pipeline=sonar&projects=Sonar&projectId=5fd2b01c2de059825bc8b8af)
+[![Codefresh build status]( https://g.codefresh.io/api/badges/pipeline/sinesio.com.br/Sonar%2Fv1?type=cf-1&key=eyJhbGciOiJIUzI1NiJ9.NWYwYmFlYzg1ZDZhMTEwMWUxMTZlNmMw.QwxVWdcTTNmv-mD06sR5EMpw_weBBFE6jChlzqnRy1E)]( https://g.codefresh.io/pipelines/edit/new/builds?id=5fd3985656e3d046be46b63b&pipeline=v1&projects=Sonar&projectId=5fd2b01c2de059825bc8b8af)
 
 # sonarqube
 
