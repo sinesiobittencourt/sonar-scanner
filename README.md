@@ -6,7 +6,7 @@ How to use:
 
 docker pull sinesiobittencourt/sonarqube
 
-docker run -d -it -p 9000:9000 -p 9092:9092 sinesiobittencourt/sonarqube
+docker run -d -it --name sonarv2 -p 9000:9000 sinesiobittencourt/sonarqube
 
 http://localhost:9000
 
