@@ -4,9 +4,11 @@
 
 How to use:
 
-docker run -d -it --name sonarServer -p 9000:9000 -v sonarServer_data:/data sonarqube:7.9-community
+docker run -d --name sonarServer -p 9000:9000 -p 9092:9092 -v sonarServer_data:/data -e SONARQUBE_JDBC_USERNAME=sonar -e SONARQUBE_JDBC_PASSWORD=sonar -e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar sonarqube:latest
+
 
 >> https://github.com/gabrie-allaigre/sonar-auth-gitlab-plugin
+
 >> https://github.com/gabrie-allaigre/sonar-gitlab-plugin
 
 docker pull sinesiobittencourt/sonar-scanner:4.5
