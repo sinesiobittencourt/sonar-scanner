@@ -6,9 +6,13 @@ How to use:
 
 docker run -d -it --name sonarServer -p 9000:9000 -v sonarServer_data:/data sonarqube:7.9-community
 
+>> https://github.com/gabrie-allaigre/sonar-auth-gitlab-plugin
+
 docker pull sinesiobittencourt/sonar-scanner:4.5
 
 docker run -d -it --name sonarScanner -v sonarScanner_data:/data sinesiobittencourt/sonar-scanner:4.5
 
 http://0.0.0.0:9000
+
+
 
