@@ -4,9 +4,11 @@
 
 How to use:
 
-docker pull sinesiobittencourt/sonarqube
+docker run -d -it --name sonarServer -p 9000:9000 -v sonarServer_data:/data sonarqube:7.9-community
 
-docker run -d -it --name sonarv2 -p 9000:9000 sinesiobittencourt/sonarqube
+docker pull sinesiobittencourt/sonar-scanner:4.5
 
-http://localhost:9000
+docker run -d -it --name sonarScanner -v sonarScanner_data:/data sinesiobittencourt/sonar-scanner:4.5
+
+http://0.0.0.0:9000
 
