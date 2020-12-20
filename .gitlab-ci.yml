@@ -1,0 +1,34 @@
+stages:
+  - analysis
+
+sonar-preview:
+  stage: analysis
+  image: sinesiobittencourt/sonar-scanner:4.5
+  variables:
+    SONAR_URL: http://172.17.0.2:9000/
+    SONAR_ANALYSIS_MODE: issues
+  script:
+   - gitlab-sonar-scanner
+  tags:
+    - docker
+  only:
+     - merge_requests
+     - branches
+  except:
+    - master
+  allow_failure: true
+
+
+sonar-publish:
+  stage: analysis
+  image: sinesiobittencourt/sonar-scanner:4.5
+  variables:
+    SONAR_URL: http://172.17.0.2:9000/
+    SONAR_ANALYSIS_MODE: publish
+  script:
+   - gitlab-sonar-scanner
+  tags:
+    - docker
+  only:
+   - master
+  allow_failure: true
